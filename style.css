@@ -221,12 +221,12 @@ ul {
   background-color: hsl(0, 0%, 70%);
 }
 
-/* Image Carousel */
+/* || Image Carousel */
 
 .carousel-wrapper {
   border: 1px solid orchid;
   border-radius: 1rem;
-  height: 300px;
+  max-height: 80lvh;
   margin: 3rem;
   padding: 3rem;
 
@@ -241,7 +241,7 @@ ul {
   width: 50%;
 }
 
-/* arrows */
+/* || Arrows */
 
 .arrow-container {
   width: 3rem;
@@ -250,6 +250,23 @@ ul {
 
 .arrow {
   width: 100%;
+}
+
+/* || Pictures */
+
+.image-container {
+  height: 100%;
+  width: 100%;
+}
+
+.image-container.hidden {
+  display: none;
+}
+
+.image-container img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
 
 /* || buttons */
