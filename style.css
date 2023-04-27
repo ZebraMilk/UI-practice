@@ -226,7 +226,7 @@ ul {
 .carousel-wrapper {
   border: 1px solid orchid;
   border-radius: 1rem;
-  max-height: 80lvh;
+  max-height: 500px;
   margin: 3rem;
   padding: 3rem;
 
@@ -237,12 +237,13 @@ ul {
 .slide-frame {
   border: 1px solid orchid;
   border-radius: 1rem;
-  height: 100%;
+  height: min(80lvh 100%);
+  max-height: 80lvh;
   width: 50%;
 }
 
 /* || Arrows */
-
+/* eventually make the aroos "hover" over the images in a floaty way? */
 .arrow-container {
   width: 3rem;
   margin: auto 0;
@@ -257,6 +258,8 @@ ul {
 .image-container {
   height: 100%;
   width: 100%;
+  padding: 1rem;
+  margin: auto;
 }
 
 .image-container.hidden {
@@ -266,7 +269,20 @@ ul {
 .image-container img {
   height: 100%;
   width: 100%;
-  object-fit: contain;
+  object-fit: scale-down;
+}
+
+/* Main Focus */
+.main-focus {
+  display: block;
+}
+
+/* right and left focus */
+
+.left-focus,
+.right-focus {
+  display: block;
+  width: 70%;
 }
 
 /* || buttons */
